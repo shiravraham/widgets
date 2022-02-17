@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Accordion from "./components/Accordion";
+
+const items = [
+  {
+    title: "ihfehqkghkqgjqe 1",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu luctus quam, at sollicitudin dolor.",
+  },
+  {
+    title: "ringilla augue 2",
+    content:
+      "Duis fringilla augue ac velit laoreet, id pharetra dolor semper. Ut velit ante, ullamcorper in aliquet quis, commodo vel ex",
+  },
+  {
+    title: "ringilla augue 3",
+    content:
+      "Praesent ut ipsum augue. Donec convallis commodo ex, quis auctor sem molestie nec. Phasellus eu turpis dictum, euismod velit sit amet, fermentum dolor.",
+  },
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Accordion items={items} />
     </div>
   );
 }
